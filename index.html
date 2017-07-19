@@ -25,71 +25,71 @@
 
     <nav>
         <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">National Park Locator</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="sass.html"><i class="material-icons left">search</i>Link with Left Icon</a>
-                </li>
+            <a href="#" class="brand-logo">National Park Locator</a>
+            <ul class="right">
+              <li class="input-field col s6">
+                <input placeholder="Search a Park!" id="park-search" type="text" class="validate">
+                <label for="first_name">Search a Park</label>
+              </li>
             </ul>
         </div>
     </nav>
     <!-- Page Layout here -->
     <div class="row">
-        <div class="col s12 m4 l3">
+      <h3>List Results</h3>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m4 results-list">
             <!-- Note that "m4 l3" was added -->
-            <p>List Results</p>
-            <div id="result-1">
-
+            <div class="col m12 test" id="result-1">
+              <h6>Search Result</h6>
             </div>
 
-            <div id="result-2">
-
+            <div class="col m12 test2" id="result-2">
+              <h6>Search Result</h6>
             </div>
 
-            <div id="result-3">
-
+            <div class="col m12 test" id="result-3">
+              <h6>Search Result</h6>
             </div>
 
-            <div id="result-4">
-
+            <div class="col m12 test2" id="result-4">
+              <h6>Search Result</h6>
             </div>
 
-            <div id="result-5">
-
+            <div class="col m12 test" id="result-5">
+              <h6>Search Result</h6>
             </div>
 
-            <div id="result-6">
-
+            <div class="col m12 test2" id="result-6">
+              <h6>Search Result</h6>
             </div>
 
-            <div id="result-7">
-
+            <div class="col m12 test" id="result-7">
+              <h6>Search Result</h6>
             </div>
 
-            <div id="result-8">
-
+            <div class="col m12 test2" id="result-8">
+              <h6>Search Result</h6>
             </div>
 
-            <div id="result-9">
-
+            <div class="col m12 test" id="result-9">
+              <h6>Search Result</h6>
             </div>
 
-            <div id="result-10">
-
+            <div class="col m12 test2" id="result-10">
+              <h6>Search Result</h6>
             </div>
 
         </div>
 
-        <div class="col s12 m8 l9">
-            <!-- Note that "m8 l9" was added -->
+        <div class="row">
+          <div class="col s12 m8 map" id="map">
 
-            <p>Map</p>
-            <!-- Teal page content
+              <p>Map</p>
 
-              This content will be:
-          9-columns-wide on large screens,
-          8-columns-wide on medium screens,
-          12-columns-wide on small screens  -->
-
+          </div>
         </div>
 
         <!-- Modal Trigger -->
@@ -153,7 +153,7 @@
 
             </div>
             <div class="modal-footer">
-                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Done</a>
             </div>
         </div>
         <script type="text/javascript" src="assets/javascript/app.js"></script>

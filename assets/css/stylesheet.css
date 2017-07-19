@@ -1,10 +1,10 @@
 body {
-  font-family: 'Inder', sans-serif; line-height: 28px; margin-bottom: 15px; color: #666
+  font-family: 'Inder', sans-serif; line-height: 28px; margin-bottom: 15px;
   background-size: 960px;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; 
-  
+  background-position: center;
+
 }
 
 nps {
@@ -28,3 +28,20 @@ waves-effect waves-blue btn {
   background-color: #002e63;
 }
 
+.results-list {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.test {
+  background-color: blue;
+}
+
+.test2 {
+  background-color: red;
+}
+
+.map {
+  margin-left: 0;
+  background-color: goldenrod;
+}
