@@ -2,9 +2,12 @@ body {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   color: #777777;
   background-size: 960px;
+  border-style: groove;
+  border-color: #CC8A14;
 }
 
 nav {
 background-color: #5451FF;
 font-style: italic;
 }
+
