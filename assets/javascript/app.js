@@ -7,6 +7,21 @@ $(document).ready(function() {
   /*$('.view').leanModal();*/
   $('.modal').modal();
 
+  // var slider = document.getElementById('test-slider');
+  // noUiSlider.create(slider, {
+  //  start: [20, 80],
+  //  connect: true,
+  //  step: 1,
+  //  orientation: 'horizontal', // 'horizontal' or 'vertical'
+  //  range: {
+  //    'min': 0,
+  //    'max': 100
+  //  },
+  //  format: wNumb({
+  //    decimals: 0
+  //  })
+  // });
+
 var searches = ["missouri", "kentucky", "california", "texas", "alabama", "georgia", "montana", "wyoming", "colorado", "nebraska", "arizona"];
 
   //$("#park-search").on("click", function () {
@@ -15,7 +30,7 @@ var searches = ["missouri", "kentucky", "california", "texas", "alabama", "georg
 
       var returnResults = $("#result-" + i);
       returnResults.attr("data-search" +searches[i]);
-      var newResultDiv = $("<h5>" + searches[i] + "</h5>");
+      var newResultDiv = $("<a href='#!' class='modal-action modal-close waves-effect         waves-green btn-flat col m12'>" + "<h5>" + searches[i] + "</h5>"+ "</a>");
 
       returnResults.html(newResultDiv);
 

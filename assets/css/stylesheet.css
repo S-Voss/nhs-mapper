@@ -15,6 +15,10 @@ nps {
   height: auto;
 }
 
+a.brand-logo {
+  color: red;
+}
+
 nav {
   background-color: #002e63;
   color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-transform: uppercase;
