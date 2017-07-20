@@ -7,6 +7,20 @@ $(document).ready(function() {
   /*$('.view').leanModal();*/
   $('.modal').modal();
 
-  $("#")
+var searches = ["missouri", "kentucky", "california", "texas", "alabama", "georgia", "montana", "wyoming", "colorado", "nebraska", "arizona"];
+
+  //$("#park-search").on("click", function () {
+
+    for (var i=0; i<searches.length; i++) {
+
+      var returnResults = $("#result-" + i);
+      returnResults.attr("data-search" +searches[i]);
+      var newResultDiv = $("<h5>" + searches[i] + "</h5>");
+
+      returnResults.html(newResultDiv);
+
+    }
+
+  //};
 
 });
