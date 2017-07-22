@@ -21,12 +21,12 @@ $(document).ready(function() {
   //    decimals: 0
   //  })
   // });
-
+var timeCounter = 250;
 var searches = ["missouri", "kentucky", "california", "texas", "alabama", "georgia", "montana", "wyoming", "colorado", "nebraska", "arizona"];
 
   //$("#park-search").on("click", function () {
 
-    for (var i=0; i<searches.length; i++) {
+    for (var i = 0; i < searches.length; i++) {
 
       var returnResults = $("#result-" + i);
       returnResults.attr("data-search" +searches[i]);
@@ -34,13 +34,11 @@ var searches = ["missouri", "kentucky", "california", "texas", "alabama", "georg
 
       returnResults.html(newResultDiv);
 
-    $("data-search")
-      .velocity("fadeIn", { duration: 15000 })
-      .velocity("fadeOut", { delay: 5000, duration: 15000 });
+      timeCounter += 250;
+      $("#result-" + i).velocity("transition.slideUpIn", { stagger: timeCounter });
     }
 
   //};
-
 
 });
 
