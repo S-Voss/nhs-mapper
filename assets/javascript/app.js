@@ -34,6 +34,9 @@ var searches = ["missouri", "kentucky", "california", "texas", "alabama", "georg
 
       returnResults.html(newResultDiv);
 
+    $("data-search")
+      .velocity("fadeIn", { duration: 15000 })
+      .velocity("fadeOut", { delay: 5000, duration: 15000 });
     }
 
   //};
