@@ -7,20 +7,21 @@ $(document).ready(function() {
   /*$('.view').leanModal();*/
   $('.modal').modal();
 
-  // var slider = document.getElementById('test-slider');
-  // noUiSlider.create(slider, {
-  //  start: [20, 80],
-  //  connect: true,
-  //  step: 1,
-  //  orientation: 'horizontal', // 'horizontal' or 'vertical'
-  //  range: {
-  //    'min': 0,
-  //    'max': 100
-  //  },
-  //  format: wNumb({
-  //    decimals: 0
-  //  })
-  // });
+var slider = document.getElementById('test-slider');
+noUiSlider.create(slider, {
+ start: [0, 80],
+ connect: true,
+ step: 1,
+ orientation: 'horizontal', // 'horizontal' or 'vertical'
+ range: {
+   'min': 0,
+   'max': 100
+ },
+ format: wNumb({
+   decimals: 0
+ })
+});
+
 var timeCounter = 250;
 var searches = ["missouri", "kentucky", "california", "texas", "alabama", "georgia", "montana", "wyoming", "colorado", "nebraska", "arizona"];
 
