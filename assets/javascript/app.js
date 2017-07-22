@@ -7,20 +7,22 @@ $(document).ready(function() {
   /*$('.view').leanModal();*/
   $('.modal').modal();
 
-var slider = document.getElementById('test-slider');
-noUiSlider.create(slider, {
- start: [0, 80],
- connect: true,
- step: 1,
- orientation: 'horizontal', // 'horizontal' or 'vertical'
- range: {
-   'min': 0,
-   'max': 100
- },
- format: wNumb({
-   decimals: 0
- })
-});
+
+  var slider = document.getElementById('distance');
+  noUiSlider.create(slider, {
+   start: [0, 50],
+   connect: true,
+   step: 1,
+   orientation: 'horizontal', // 'horizontal' or 'vertical'
+   range: {
+     'min': 0,
+     'max': 100
+   },
+   format: wNumb({
+     decimals: 0
+   })
+  });
+
 
 var timeCounter = 250;
 var searches = ["missouri", "kentucky", "california", "texas", "alabama", "georgia", "montana", "wyoming", "colorado", "nebraska", "arizona"];
@@ -53,3 +55,32 @@ function initMap() {
 
   map = new google.maps.Map(document.getElementById('map'), options);
 }
+
+
+
+function showResult(result){
+  var lat = result.geometry.location.lat();
+  var long = result.geometry.location.lng();
+  alert('Lat: ' + lat + "\n" + "Long: " + long)
+}
+
+function getLatitudeLongitude(callback, address) {
+    // If adress is not supplied, use default value 'Ferrol, Galicia, Spain'
+    address = address || 'Ferrol, Galicia, Spain';
+    // Initialize the Geocoder
+    geocoder = new google.maps.Geocoder();
+    if (geocoder) {
+        geocoder.geocode({
+            'address': address
+        }, function (results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+                callback(results[0]);
+            }
+        });
+    }
+}
+
+$("#submit-search").on("click", function () {
+    var address = document.getElementById('zip-code').value;
+    getLatitudeLongitude(showResult, address)
+});

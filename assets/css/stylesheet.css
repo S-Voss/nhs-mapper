@@ -7,60 +7,55 @@ body {
 
 }
 
-nps {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 100px;
-  height: auto;
-}
-
 a.brand-logo {
-  color: red;
+  color: white;
   padding-left: 15px;
 }
 
-nav, footer {
+nav {
   background-color: #002e63;
   color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-transform: uppercase;
 }
 
 footer {
    position:fixed;
-   left:0px;
-   bottom:0px;
+   bottom:0;
    height:75px;
    width:100%;
-   margin-bottom: 0px;
+   background-color: #002e63;
+   color:white;
+   text-align:center;
+   padding-top:10px;
 }
 
 .btn {
-  background-color: #002e63;
-}
-
-waves-effect waves-blue btn {
-  background-color: #002e63;
+  background-color: #002e63;  
+  margin-bottom: 15px;
 }
 
 .results-list {
   margin-right: 0;
   padding-right: 0;
+
 }
 
 .test {
-  background-color: blue;
+  background-color: green;
 }
 
 .test2 {
-  background-color: red;
+  background-color: gold;
 }
 
 .map {
   margin-left: 0;
-  background-color: goldenrod;
 }
 
 #map {
   height: 500px;
   width: 100%;
+}
+
+#modal-title {
+  padding-top:10px;
 }
