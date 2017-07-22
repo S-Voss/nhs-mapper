@@ -17,11 +17,21 @@ nps {
 
 a.brand-logo {
   color: red;
+  padding-left: 15px;
 }
 
-nav {
+nav, footer {
   background-color: #002e63;
   color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-transform: uppercase;
+}
+
+footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:75px;
+   width:100%;
+   margin-bottom: 0px;
 }
 
 .btn {
@@ -48,4 +58,9 @@ waves-effect waves-blue btn {
 .map {
   margin-left: 0;
   background-color: goldenrod;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
 }

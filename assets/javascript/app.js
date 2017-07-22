@@ -38,4 +38,16 @@ var searches = ["missouri", "kentucky", "california", "texas", "alabama", "georg
 
   //};
 
+
 });
+
+//Code Which Generates the Google map
+function initMap() {
+  //Settings for our map
+  var options = {
+    zoom: 7,
+    center: {lat: 35.2295948, lng: -80.8359465}
+  }
+
+  map = new google.maps.Map(document.getElementById('map'), options);
+}
