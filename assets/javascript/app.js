@@ -84,3 +84,5 @@ $("#submit-search").on("click", function () {
     var address = document.getElementById('zip-code').value;
     getLatitudeLongitude(showResult, address)
 });
+
+//collapse feature
