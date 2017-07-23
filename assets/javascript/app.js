@@ -10,13 +10,13 @@ $(document).ready(function() {
 
   var slider = document.getElementById('distance');
   noUiSlider.create(slider, {
-   start: [0, 50],
+   start: [0],
    connect: true,
    step: 1,
    orientation: 'horizontal', // 'horizontal' or 'vertical'
    range: {
      'min': 0,
-     'max': 100
+     'max': 30
    },
    format: wNumb({
      decimals: 0

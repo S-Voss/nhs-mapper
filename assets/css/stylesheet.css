@@ -59,3 +59,8 @@ footer {
 #modal-title {
   padding-top:10px;
 }
+
+.modal {
+  overflow: visible;
+}
+
