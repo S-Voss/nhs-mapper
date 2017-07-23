@@ -8,20 +8,20 @@ $(document).ready(function() {
   $('.modal').modal();
 
 
-  var slider = document.getElementById('distance');
-  noUiSlider.create(slider, {
-   start: [0],
-   connect: true,
-   step: 1,
-   orientation: 'horizontal', // 'horizontal' or 'vertical'
-   range: {
-     'min': 0,
-     'max': 30
-   },
-   format: wNumb({
-     decimals: 0
-   })
-  });
+  //var slider = document.getElementById('distance');
+  //noUiSlider.create(slider, {
+   //start: [0],
+   //connect: true,
+   //step: 1,
+   //orientation: 'horizontal', // 'horizontal' or 'vertical'
+   //range: {
+     //'min': 0,
+     //'max': 30
+   //},
+   //format: wNumb({
+     //decimals: 0
+   //})
+  //});
 
 
 var timeCounter = 250;
