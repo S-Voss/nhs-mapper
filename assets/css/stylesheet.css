@@ -37,11 +37,14 @@ footer {
 .btn {
   background-color: #002e63;  
   margin-bottom: 15px;
+
   margin-right:10px;
+
 }
 
 .results-list {
   margin-right: 0;
+
   
 }
 
@@ -58,6 +61,17 @@ footer {
   color: black;
   font-size: 20px;
   padding:5px;
+  padding-right: 0;
+
+}
+
+.test {
+  background-color: green;
+}
+
+.test2 {
+  background-color: gold;
+
 }
 
 
@@ -74,7 +88,14 @@ footer {
   padding-top:10px;
 }
 
+
 #search-input {
   margin-top:-25px;
   margin-right:10px;
 }
+
+.modal {
+  overflow: visible;
+}
+
+
