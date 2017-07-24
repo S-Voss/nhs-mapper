@@ -14,7 +14,13 @@ a.brand-logo {
 
 nav {
   background-color: #002e63;
-  color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-transform: uppercase;
+  color: #ffffff; 
+  font-family: 'Raleway',sans-serif; 
+  font-size: 62px; 
+  font-weight: 800; 
+  line-height: 72px; 
+  margin: 0 0 24px; 
+  text-transform: uppercase;
 }
 
 footer {
@@ -31,10 +37,30 @@ footer {
 .btn {
   background-color: #002e63;  
   margin-bottom: 15px;
+
+  margin-right:10px;
+
 }
 
 .results-list {
   margin-right: 0;
+
+  
+}
+
+#current-zip {
+  margin-left:12px;
+}
+
+#result-1, #result-2, #result-3,
+#result-4, #result-5, #result-6,
+#result-7, #result-8, #result-9, #result-10,
+#current-zip {
+  background-color: white;
+  font-family: 'Raleway',sans-serif; 
+  color: black;
+  font-size: 20px;
+  padding:5px;
   padding-right: 0;
 
 }
@@ -45,7 +71,9 @@ footer {
 
 .test2 {
   background-color: gold;
+
 }
+
 
 .map {
   margin-left: 0;
@@ -60,7 +88,14 @@ footer {
   padding-top:10px;
 }
 
+
+#search-input {
+  margin-top:-25px;
+  margin-right:10px;
+}
+
 .modal {
   overflow: visible;
 }
+
 
