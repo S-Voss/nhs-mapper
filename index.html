@@ -17,19 +17,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
-
-    <title>National Park Locator</title>
+    <title>Regional Park Locator</title>
 </head>
 
 <body>
 
   <nav>
       <div class="nav-wrapper">
-          <a href="index.html" class="brand-logo">National Park Locator</a>
+          <a href="index.html" class="brand-logo">Regional Park Locator</a>
           <ul class="right">
             <li class="col s6">
-              <!-- Modal Trigger -->
-              <a class="waves-effect waves-light btn" href="#modal1">Search</a>
+              <li id="search-input"><input id="zip-code" placeholder="Zip Code" type="text" class="validate"></li>
+              <li><button type="button" class="btn" id="submit-search">Search</button></li>
               <!--<button data-target="modal1" class="btn"></button> -->
             </li>
           </ul>
@@ -37,47 +36,8 @@
   </nav>
 
   <div class="row">
+    <p id="current-zip"></p>
     <div class="col s12 m4 results-list">
-      <!-- Note that "m4 l3" was added -->
-      <div class="col m12 test" id="result-1">
-        <h6>Search Result</h6>
-      </div>
-
-      <div class="col m12 test2" id="result-2">
-        <h6>Search Result</h6>
-      </div>
-
-      <div class="col m12 test" id="result-3">
-        <h6>Search Result</h6>
-      </div>
-
-      <div class="col m12 test2" id="result-4">
-        <h6>Search Result</h6>
-      </div>
-
-      <div class="col m12 test" id="result-5">
-        <h6>Search Result</h6>
-      </div>
-
-      <div class="col m12 test2" id="result-6">
-        <h6>Search Result</h6>
-      </div>
-
-      <div class="col m12 test" id="result-7">
-        <h6>Search Result</h6>
-      </div>
-
-      <div class="col m12 test2" id="result-8">
-        <h6>Search Result</h6>
-      </div>
-
-      <div class="col m12 test" id="result-9">
-        <h6>Search Result</h6>
-      </div>
-
-      <div class="col m12 test2" id="result-10">
-        <h6>Search Result</h6>
-      </div>
     </div>
 
     <div class="row">
@@ -87,193 +47,18 @@
 
       </div>
     </div>
-
-        <!-- Modal Structure -->
-        <div id="modal1" class="modal">
-            <div class="modal-content">
-
-                <div id="modal-title">
-                    <h2>Enter Search Parameters</h2>
-                </div>
-
-                <div id="location">
-
-                </div>
-
-                <div id="description">
-
-                </div>
-
-                <div id="image">
-
-                </div>
-
-                <div id="alerts">
-
-                </div>
-
-                <div id="vistor_center_contact_info">
-
-                </div>
-
-                <div id="hours">
-
-                </div>
-
-                <div id="fee">
-
-                </div>
-
-                <div id="accessibility">
-
-                </div>
-
-                <div id="range">
-
-                </div>
-
-                <div id="zip_code">
-
-                </div>
-
-            </div>
-            <div class="modal-footer">
-              <div class="row">
-              <form class="col s12">
-                <div class="row">
-                  <div class="input-field col s6">
-                    <input id="zip-code" type="text" class="validate">
-                    <label for="zipCode">Zip Code</label>
-                  </div>
-                <div class="row">
-                  <div class="input-field col s12 sliderClass">
-                    <div id="distance"></div>
-                    <label for="distance">Distance</label>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <button class="btn" id="submit-search" type="button">Search</button>
-                  </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-            </div>
-        </div>
-
+    
+      
+  </div>
 
   <footer>    
       <p>&copy;2017. Group One.
-
-<ul class="collapsible" data-collapsible="accordion">
-    <li>
-        <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-        <div class="collapsible-body">
-            <div id="location">
-                <img src="assets/images/location.jpg" width="50" height="50">
-            </div>
-
-            <div id="description">
-                <img src="assets/images/description.png" width="50" height="50">
-            </div>
-
-            <div id="image">
-                <img src="assets/images/image.png" width="50" height="50">
-            </div>
-
-            <div id="alerts">
-                <img src="assets/images/alert.png" width="50" height="50">
-            </div>
-
-            <div id="vistor_center_contact_info">
-                <img src="assets/images/visitorcenter.png" width="50" height="50">
-            </div>
-
-            <div id="hours">
-                <img src="assets/images/hours.png" width="50" height="50">
-            </div>
-
-            <div id="fee">
-                <img src="assets/images/fees.png" width="50" height="50">
-            </div>
-
-            <div id="accessibility">
-                <img src="assets/images/accessibility.png" width="50" height="50">
-            </div>
-
-            <div id="range">
-                <img src="assets/images/range.jpg" width="50" height="50">
-            </div>
-
-            <div id="zip_code">
-                <img src="assets/images/zip.png" width="50" height="50">
-                </span>
-            </div>
-    </li>
-    <li>
-        <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span>
-        </div>
-    </li>
-    <li>
-        <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span>
-        </div>
-    </li>
-    <li>
-        <div class="collapsible-header"><i class="material-icons">whatshot</i>Four</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span>
-        </div>
-    </li>
-    <li>
-        <div class="collapsible-header"><i class="material-icons">filter_drama</i>Five</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span>
-        </div>
-    </li>
-    <li>
-        <div class="collapsible-header"><i class="material-icons">place</i>Six</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span>
-        </div>
-    </li>
-    <li>
-        <div class="collapsible-header"><i class="material-icons">whatshot</i>Seven</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span>
-        </div>
-    </li>
-    <li>
-        <div class="collapsible-header"><i class="material-icons">whatshot</i>Eight</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span>
-        </div>
-        <div class="collapsible-header"><i class="material-icons">whatshot</i>Nine</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span>
-        </div>
-    </li>
-    <li>
-        <div class="collapsible-header"><i class="material-icons">whatshot</i>Ten</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span>
-        </div>
-    </li>
-</ul>
-
-<li>
-    </div>
-    
-        
-
-  <footer>    <!-- Modal Trigger -->
-    <a class="waves-effect waves-light btn" href="#modal1">Search</a>
-    <!--<button data-target="modal1" class="btn"></button> -->
-
   </footer>
-
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAM2cj-5PTx7qW8m5QJjoxqef7a2lO1gFs&callback=initMap"
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAM2cj-5PTx7qW8m5QJjoxqef7a2lO1gFs&libraries=places&callback=initMap"
           async defer></script>
         <script type="text/javascript" src="assets/javascript/app.js"></script>
         <script type="text/javascript" src="assets/javascript/velocity.min.js"></script>
-        <script type="text/javascript" src="assets/javascript/velocity.ui.js"></script>
         <script type="text/javascript" src="assets/extras/nouislider.js"></script>
-        <link rel="stylesheet" type="text/css" href="assets/extras/nouislider.css">
 </body>
 
 </html>
