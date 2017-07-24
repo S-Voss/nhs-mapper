@@ -90,3 +90,8 @@ footer {
 p {
   font-size:15px;
 }
+
+#search-input {
+  margin-top:-25px;
+  margin-right:10px;
+}
