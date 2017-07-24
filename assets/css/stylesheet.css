@@ -86,3 +86,7 @@ footer {
 .modal {
   overflow: visible;
 }
+
+p {
+  font-size:15px;
+}
