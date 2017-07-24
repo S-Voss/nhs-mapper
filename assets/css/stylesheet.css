@@ -4,7 +4,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-
 }
 
 a.brand-logo {
@@ -16,7 +15,6 @@ nav {
   background-color: #002e63;
   color: #ffffff;
   font-family: 'Raleway',sans-serif;
-  font-size: 62px;
   font-weight: 800;
   line-height: 72px;
   margin: 0 0 24px;
@@ -34,13 +32,10 @@ footer {
    padding-top:10px;
 }
 
-
 .btn {
   background-color: #002e63;
   margin-bottom: 15px;
-
   margin-right:10px;
-
 }
 
 .results-list {
@@ -61,8 +56,11 @@ footer {
   font-size: 20px;
   padding:5px;
   padding-right: 0;
-
 }
+
+ h6 {
+  font-size: 22px;
+ }
 
 .test {
   background-color: green;
@@ -70,9 +68,7 @@ footer {
 
 .test2 {
   background-color: gold;
-
 }
-
 
 .map {
   margin-left: 0;
@@ -85,12 +81,6 @@ footer {
 
 #modal-title {
   padding-top:10px;
-}
-
-
-#search-input {
-  margin-top:-25px;
-  margin-right:10px;
 }
 
 .modal {

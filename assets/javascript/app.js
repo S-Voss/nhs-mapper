@@ -42,8 +42,18 @@ function callback(results, status) {
           resultContainer.html($("<div class='collapsible-header returnedValues'></div><div class ='collapsible-body'></div>").attr('id', 'result-' + (i + 1)));
           //Add the title to the header
           $("#result-" + (i + 1)).append($("<h6>").text(results[i].name));
+
+
           //Add the description details to the item bodies
-          $(".collapsible-body#result-" + (i + 1)).append($("<p>").text("Hello"));
+          $(".collapsible-body#result-" + (i + 1))
+                .append($("<p>")
+                .append("Type: "              + results[i].types[0])
+                .append("<br>Rating: "        + results[i].rating)
+                .append("<br>Address: "       + results[i].vicinity)
+ //               .append("<br>Open Now: "      + results[i].opening_hours.open_now.val())
+                .append("<br>Entrance Fee: "  + results[i].price_level)
+                );
+
           //Run the function to generate marker photos to be placed onto the map
           createPhotoMarker(results[i]);
         }
@@ -51,8 +61,8 @@ function callback(results, status) {
         $("li").velocity("transition.slideUpIn", { stagger: 150 });
 
     } else {
-        $(".results").empty(); //what if the status does not come back as ok, maybe it has zero results?
-        $(".results").html($('<h5> No parks in your area</h5>'));
+        $("#results").empty(); //what if the status does not come back as ok, maybe it has zero results?
+        $("#results").html($('<h5> No parks in your area</h5>'));
     }
 }
 
