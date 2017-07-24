@@ -16,6 +16,8 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
 
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
     <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
     <title>Regional Park Locator</title>
 </head>
@@ -30,14 +32,15 @@
       <ul class="right hide-on-med-and-down">
         <li><input id="zip-code" placeholder="Zip Code" type="text" class="validate"></a></li>
         <li><button type="button" class="btn" id="submit-search">Search</button></li>
+        <li><button type="button" class="btn" id="displayDB">Past Results</button></li>
       </ul>
       <ul class="side-nav" id="mobile-demo" style='color: black'>
         <li><input id="zip-code" placeholder="Zip Code" type="text" class="validate"></li>
         <li><button type="button" class="btn" id="submit-search">Search</button></li>
+        <li><button type="button" class="btn" id="displayDB">Past Results</button></li>
       </ul>
     </div>
   </nav>
-
 
   <div class="row">
     <p id="current-zip"></p>
@@ -59,6 +62,7 @@
         <script type="text/javascript" src="assets/javascript/velocity.min.js"></script>
         <script type="text/javascript" src="assets/javascript/velocity.ui.js"></script>
         <script type="text/javascript" src="assets/extras/nouislider.js"></script>
+        <script type="text/javascript" src="assets/db/db.js"></script>        
 </body>
 
 </html>
