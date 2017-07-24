@@ -136,4 +136,12 @@ $("#submit-search").on("click", function() { //no need to hide the current value
     getLatitudeLongitude(showResult, address);
     $("#current-zip").empty();
     $("#current-zip").html("Current Zip: " + address);
+
+    event.preventDefault();
+    var searchLocation  = $("#zip-code").val().trim();
+
+    database.ref().push({
+        searchLocations: searchLocation,
+        dateAdded: firebase.database.ServerValue.TIMESTAMP
+    });
 });
