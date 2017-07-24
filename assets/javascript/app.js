@@ -51,7 +51,7 @@ function callback(results, status) {
                 .append("<br>Rating: "        + results[i].rating)
                 .append("<br>Address: "       + results[i].vicinity)
  //               .append("<br>Open Now: "      + results[i].opening_hours.open_now.val())
-                .append("<br>Entrance Fee: "  + results[i].price_level)
+ //               .append("<br>Entrance Fee: "  + results[i].price_level)
                 );
 
           //Run the function to generate marker photos to be placed onto the map
@@ -62,7 +62,8 @@ function callback(results, status) {
 
     } else {
         $("#results").empty(); //what if the status does not come back as ok, maybe it has zero results?
-        $("#results").html($('<h5> No parks in your area</h5>'));
+            var noPark = $("#results").html($('<h5> No parks in your area</h5>').css('text-align','center');
+            noPark.css('padding-bottom','5px');
     }
 }
 
