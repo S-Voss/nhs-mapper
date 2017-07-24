@@ -2,7 +2,7 @@ var map;
 var infowindow;
 var location;
 var resultsList;
-//Initialize map to display parks within a 
+//Initialize map to display parks within a
 //1 mile (1609.34 meter) radius of Center City Charlotte
 function initMap() {
     $("#current-zip").html("Current Zip: 28202");
@@ -24,20 +24,35 @@ function initMap() {
 
 function callback(results, status) {
     if ((status === google.maps.places.PlacesServiceStatus.OK) && (location != { lat: 35.2295948, lng: -80.8359465 })) {
-        $(".results-list").empty(); //empty out current values
+        $("#results").empty(); //empty out current values
         var length;
         if (results.length <= 10) { //since there is no param to limit api results, we must do something like this
             length = results.length;
         } else {
             length = 10;
         }
+        //===================
+
+        //========================
         for (var i = 0; i < length; i++) { //that way if we have fewer than 10 results, we won't loop too many times and create errors
-            $(".results-list").append($('<div class="col m12 test" id="result-' + (i + 1) + '">' + (i + 1) + '. ' + results[i].name + '</div>'));
-            createPhotoMarker(results[i]);
+          //Create a list element for every item returned and append it to the results list
+          var resultContainer = $("<li id='resultsLI'>").css("display", "none");
+          $("#results").append(resultContainer);
+          //Add a div into each list item for the header and body
+          resultContainer.html($("<div class='collapsible-header returnedValues'></div><div class ='collapsible-body'></div>").attr('id', 'result-' + (i + 1)));
+          //Add the title to the header
+          $("#result-" + (i + 1)).append($("<h6>").text(results[i].name));
+          //Add the description details to the item bodies
+          $(".collapsible-body#result-" + (i + 1)).append($("<p>").text("Hello"));
+          //Run the function to generate marker photos to be placed onto the map
+          createPhotoMarker(results[i]);
         }
+        //Add an effect when loading the results in the list
+        $("li").velocity("transition.slideUpIn", { stagger: 150 });
+
     } else {
-        $(".results-list").empty(); //what if the status does not come back as ok, maybe it has zero results?
-        $(".results-list").html($('<h5> No parks in your area</h5>'));
+        $(".results").empty(); //what if the status does not come back as ok, maybe it has zero results?
+        $(".results").html($('<h5> No parks in your area</h5>'));
     }
 }
 
