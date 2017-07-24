@@ -62,7 +62,7 @@ function callback(results, status) {
 
     } else {
         $("#results").empty(); //what if the status does not come back as ok, maybe it has zero results?
-            var noPark = $("#results").html($('<h5> No parks in your area</h5>').css('text-align','center').css('padding-bottom', '5px'));
+            var noPark = $("#results").html($('<p> No parks in your area</p>').css('text-align','center').css('padding-bottom', '5px'));
   
     }
 }
